@@ -26,7 +26,7 @@ type = list(string)
 default = ["0.0.0.0/0"]
 }
 resource "aws_instance" "myec2" {
-ami = "ami-005f9685cb30f234b"
+ami = "ami-0532899d46335ff25"
 instance_type = "t2.micro"
 vpc_security_group_ids = [aws_security_group.ownsg.id]
 key_name = "tf-key-pair"
